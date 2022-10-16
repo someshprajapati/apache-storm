@@ -1,3 +1,5 @@
+# Standalone Storm Installation and Configurations
+
 ### Add hosts entries (mocking DNS) - put relevant IPs here
 ```
 echo "192.168.1.11 nimbus
@@ -166,48 +168,6 @@ ubuntu@nimbus:~/apache-storm$ jps
 19932 nimbus
 ```
 
-
-
-### Check if Storm is running or not (Check the `Mode`)
-`jps`
-
-`zkServer.sh status`
-
-> Results:
-```
-ubuntu@nimbus:~/zookeeper$ jps
-19195 QuorumPeerMain
-19214 Jps
-
-ubuntu@nimbus:~/zookeeper$ zkServer.sh status
-ZooKeeper JMX enabled by default
-Using config: /home/ubuntu/zookeeper/bin/../conf/zoo.cfg
-Mode: standalone
-```
-
-### Demonstrate the use of a 4 letter word
-`echo "ruok" | nc localhost 2181 ; echo`
-
-> Results:
-```
-imok
-```
-
-### Verify it's connected
-`nc -vz localhost 2181`
-
-> Results:
-```
-ubuntu@nimbus:~/zookeeper$ nc -vz localhost 2181
-Connection to localhost 2181 port [tcp/*] succeeded!
-```
-
-### Verify it's started
-`nc -vz localhost 2181`
-`echo "ruok" | nc localhost 2181 ; echo`
-
-### Check the logs
-`ubuntu@nimbus:~/zookeeper$ cat zookeeper.out`
 
 ### Verify the Nimbus UI
 Open the Nimbus UI in browser at port 8080: 

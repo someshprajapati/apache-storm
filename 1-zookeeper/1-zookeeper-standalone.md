@@ -1,3 +1,5 @@
+# Standalone Zookeeper Installation and Configurations
+
 ### System Info
 ```
 ubuntu@nimbus:~$ uname -a
