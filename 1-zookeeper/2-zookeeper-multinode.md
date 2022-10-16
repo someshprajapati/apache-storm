@@ -1,5 +1,5 @@
 # ZooKeeper setup on Storm2 and Storm3 servers
-Follow the same steps on Storm2 and Storm3 servers which we followed on Storm1 server previously till Step[Create data dictionary for zookeeper in all servers]: [zookeeper-standalone](1-zookeeper-standalone.md)
+Follow the same steps on Storm2 and Storm3 servers which we followed on Storm1 server previously till Step[`Create data dictionary for zookeeper in all servers`]: [zookeeper-standalone](1-zookeeper-standalone.md)
 
 ### Zookeeper configurations (Copy file from `zoo.cfg`)
 `vim /home/ubuntu/zookeeper/conf/zoo.cfg`
