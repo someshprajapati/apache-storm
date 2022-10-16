@@ -202,4 +202,4 @@ Connection to localhost 2181 port [tcp/*] succeeded!
 `ubuntu@nimbus:~/zookeeper$ cat zookeeper.out`
 
 
-Next: [Zookeeper Quorum](2-zookeeper-quorum.md)
+Next: [Zookeeper Multinode](2-zookeeper-multinode.md)
